@@ -1,0 +1,6 @@
+@WtfordOmnifyBackend_HostAddress = http://localhost:5296
+
+GET {{WtfordOmnifyBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
