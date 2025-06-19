@@ -1,6 +1,7 @@
 var builder = WebApplication.CreateBuilder(args);
+
+// Add services to container-MGG
 var app = builder.Build();
 
-app.MapGet("/", () => "Hello World!");
-
+// Configure the HTTP request pipeline-MGG
 app.Run();
