@@ -1,5 +1,4 @@
 ﻿using Framework.CQRS;
-using MediatR;
 using OmniApi.Models;
 using System.ComponentModel.DataAnnotations;
 using System.Windows.Input;
