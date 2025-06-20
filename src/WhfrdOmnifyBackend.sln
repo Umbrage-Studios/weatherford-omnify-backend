@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Omni", "Omni", "{D47B3D57-3
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OmniApi", "services\Omni\OmniApi\OmniApi.csproj", "{8774C863-F60F-4A97-BFFB-35A51FB96AAB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{AACEA3DF-5F73-4EA6-A13A-70E04DAF9192}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework", "Framework\Framework\Framework.csproj", "{767135E2-FA37-4514-990C-BF87DBFDD29E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,10 @@ Global
 		{8774C863-F60F-4A97-BFFB-35A51FB96AAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8774C863-F60F-4A97-BFFB-35A51FB96AAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8774C863-F60F-4A97-BFFB-35A51FB96AAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{767135E2-FA37-4514-990C-BF87DBFDD29E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{767135E2-FA37-4514-990C-BF87DBFDD29E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{767135E2-FA37-4514-990C-BF87DBFDD29E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{767135E2-FA37-4514-990C-BF87DBFDD29E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -26,6 +34,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D47B3D57-3C8F-46CA-AA9C-2CA80F997938} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{8774C863-F60F-4A97-BFFB-35A51FB96AAB} = {D47B3D57-3C8F-46CA-AA9C-2CA80F997938}
+		{767135E2-FA37-4514-990C-BF87DBFDD29E} = {AACEA3DF-5F73-4EA6-A13A-70E04DAF9192}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4F94CBC3-CD39-45E1-9AF3-36B8902BCFD3}
