@@ -1,5 +1,7 @@
 ﻿using Framework.CQRS;
 using MediatR;
+using OmniApi.Models;
+using System.ComponentModel.DataAnnotations;
 using System.Windows.Input;
 
 namespace OmniApi.Payload.CapturePayload
@@ -13,10 +15,26 @@ namespace OmniApi.Payload.CapturePayload
     internal class CapturePayloadCommandHandler 
         : ICommandHandler<CapturePayload_Command, CapturePayload_Result>
     {
-        public Task<CapturePayload_Result> Handle(CapturePayload_Command command, CancellationToken cancellationToken)
+        public async Task<CapturePayload_Result> Handle(CapturePayload_Command command, CancellationToken cancellationToken)
         {
             //Business logic MGG 6/20
-            throw new NotImplementedException();
+            
+            //create payload entitiy
+            var devicepaylod = new DevicePayload
+            {
+                Timestamp = command.Timestamp,
+                DataType=command.DataType,
+                Value=command.Value,
+                Properties=command.Properties
+            };
+
+            //Save Database
+
+
+            //Return Result
+            return new CapturePayload_Result(Guid.NewGuid());
+
+            
         }
     }
 }
