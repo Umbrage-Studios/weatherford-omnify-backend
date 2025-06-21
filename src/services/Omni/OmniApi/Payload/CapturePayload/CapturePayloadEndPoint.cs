@@ -32,10 +32,8 @@ namespace OmniApi.Payload.CapturePayload
                 .Produces<CaptureDevicePayload_Response>(StatusCodes.Status202Accepted)
                 .ProducesProblem(StatusCodes.Status400BadRequest)
                 .WithSummary("Device Payload Capture")
-                .WithDescription("Device Payload Capture");
-
+                .WithDescription("Device Payload Capture");           
             
-            throw new NotImplementedException();
         }
     }
 }
