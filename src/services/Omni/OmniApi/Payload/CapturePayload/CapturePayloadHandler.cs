@@ -11,7 +11,7 @@ namespace OmniApi.Payload.CapturePayload
     public record CapturePayload_Result(Guid Id);
 
     //Link Payload MGG 6/20    
-    internal class CapturePayloadCommandHandler 
+    internal class CapturePayloadCommandHandler (IDocumentSession session)
         : ICommandHandler<CapturePayload_Command, CapturePayload_Result>
     {
         public async Task<CapturePayload_Result> Handle(CapturePayload_Command command, CancellationToken cancellationToken)
@@ -29,9 +29,10 @@ namespace OmniApi.Payload.CapturePayload
 
             //Save Database
 
-
+            session.Store(devicepaylod);
+            await session.SaveChangesAsync(cancellationToken);
             //Return Result
-            return new CapturePayload_Result(Guid.NewGuid());
+            return new CapturePayload_Result((devicepaylod.Id));
 
             
         }

@@ -1,0 +1,5 @@
+services:
+  WeatherfordIoTDb:
+    image: postgres
+volumes:
+    postgress_WeatherFord:
