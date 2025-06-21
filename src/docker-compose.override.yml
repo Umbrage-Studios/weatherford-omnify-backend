@@ -1,0 +1,13 @@
+services:
+  WeatherfordIoTDb:
+    container_name: WeatherfordPostgressDb    
+    environment:
+      POSTGRES_USER: Weatherford
+      POSTGRES_PASSWORD: Whrdford1234
+      POSTGRES_DB: WeatherfordIoTDb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgress_WeatherFord:/var/lib/postgresql/data/
+    restart: always
+
