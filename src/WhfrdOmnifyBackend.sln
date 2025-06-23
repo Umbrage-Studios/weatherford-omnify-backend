@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{02
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Omni", "Omni", "{D47B3D57-3C8F-46CA-AA9C-2CA80F997938}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OmniApi", "services\Omni\OmniApi\OmniApi.csproj", "{8774C863-F60F-4A97-BFFB-35A51FB96AAB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weatherford_OmniAPI", "services\Omni\OmniApi\Weatherford_OmniAPI.csproj", "{8774C863-F60F-4A97-BFFB-35A51FB96AAB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{AACEA3DF-5F73-4EA6-A13A-70E04DAF9192}"
 EndProject
