@@ -14,7 +14,17 @@ builder.Services.AddMarten(opts=>
     opts.Connection(builder.Configuration.GetConnectionString("WeatherfordDBConfigration")!);       
 }).UseLightweightSessions();
 
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
 var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
 // Configure the HTTP request pipeline-MGG
 app.MapCarter();
 
